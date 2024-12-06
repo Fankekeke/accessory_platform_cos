@@ -14,7 +14,6 @@ Page({
 			id: 1,
 			url: 'https://www.nvidia.cn/content/nvidiaGDC/cn/zh_CN/software/nvidia-app/_jcr_content/root/responsivegrid/nv_container_3398778/nv_container/nv_teaser_483136130.coreimg.100.630.jpeg/1730262804626/nvidia-studio-drivers-ari.jpeg',
 			type: 2
-
 		}, {
 			id: 2,
 			url: 'https://www.nvidia.cn/content/dam/en-zz/Solutions/software/nvidia-app/nvidia-app-gpu-control-center-bm-l580-d.jpg',
