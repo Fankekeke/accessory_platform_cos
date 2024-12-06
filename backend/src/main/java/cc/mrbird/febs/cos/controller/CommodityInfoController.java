@@ -83,7 +83,7 @@ public class CommodityInfoController {
     @PostMapping
     public R save(CommodityInfo commodityInfo) {
         // 获取商铺信息
-        ShopInfo shopInfo = shopInfoService.getOne(Wrappers.<ShopInfo>lambdaQuery().eq(ShopInfo::getUserId, commodityInfo.getShopId()));
+        ShopInfo shopInfo = shopInfoService.getOne(Wrappers.<ShopInfo>lambdaQuery().eq(ShopInfo::getSysUserId, commodityInfo.getShopId()));
         if (shopInfo != null) {
             commodityInfo.setShopId(shopInfo.getId());
         }

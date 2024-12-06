@@ -8,20 +8,20 @@ Page({
 		current: 0,lines: 0,
 		swiperlist: [{
 			id: 0,
-			url: 'http://pic.616pic.com/bg_w1180/00/00/73/AnvpS0U8Fa.jpg!/fh/300',
+			url: 'https://www.nvidia.cn/content/nvidiaGDC/cn/zh_CN/software/nvidia-app/_jcr_content/root/responsivegrid/nv_container_3398778/nv_container/nv_teaser.coreimg.100.630.jpeg/1730262797264/game-ready-drivers-ari.jpeg',
 			type: 1
 		}, {
 			id: 1,
-			url: 'http://pic.616pic.com/bg_w1180/00/00/73/6ehIltHNjp.jpg!/fh/300',
+			url: 'https://www.nvidia.cn/content/nvidiaGDC/cn/zh_CN/software/nvidia-app/_jcr_content/root/responsivegrid/nv_container_3398778/nv_container/nv_teaser_483136130.coreimg.100.630.jpeg/1730262804626/nvidia-studio-drivers-ari.jpeg',
 			type: 2
 
 		}, {
 			id: 2,
-			url: 'http://pic.616pic.com/bg_w1180/00/00/72/XQIBSnzjFs.jpg!/fh/300',
+			url: 'https://www.nvidia.cn/content/dam/en-zz/Solutions/software/nvidia-app/nvidia-app-gpu-control-center-bm-l580-d.jpg',
 			type: 3
 		}, {
 			id: 3,
-			url: 'http://pic.616pic.com/bg_w1180/00/00/73/maZV80oyuo.jpg!/fh/300',
+			url: 'https://www.nvidia.cn/content/dam/en-zz/Solutions/software/nvidia-app/nvidia-app-shadowplay-bm-l580-d.jpg',
 			type: 4
 		}],
 		iconList: [{
