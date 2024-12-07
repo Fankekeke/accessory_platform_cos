@@ -47,13 +47,12 @@ WebStorm OR VScode 编译器 [https://www.jianshu.com/p/d63b5bae9dff]
 admin
 1234qwer
 
-[配送员]
-peisong
+[商家]
+test1
 1234qwer
 
 [用户]
-fank
-1234qwer
+小程序登录
 
 #### 项目截图
 
