@@ -76,6 +76,9 @@ test1
 | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486290210.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484291183.png) | 
 | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484262993.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733485631990.png) | 
 
+|  |  |
+|---------------------|---------------------|
+| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/work/936e9baf53eb9a217af4f89c616dc19.png) |
 
 #### 演示视频
 
