@@ -76,9 +76,6 @@ test1
 | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486290210.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484291183.png) | 
 | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484262993.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733485631990.png) | 
 
-|  |  |
-|---------------------|---------------------|
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/work/936e9baf53eb9a217af4f89c616dc19.png) |
 
 #### 演示视频
 
@@ -95,6 +92,8 @@ WeChat: `Storm_Berserker`
 > 1.项目纯原创，不做二手贩子 2.一次购买终身有效 3.项目讲解持续到答辩结束 4.非常负责的答辩指导 5.黑奴价格
 
 > 项目部署调试不好包退！功能逻辑没讲明白包退！
+
+![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/work/936e9baf53eb9a217af4f89c616dc19.png)
 
 #### 其它资源
 
