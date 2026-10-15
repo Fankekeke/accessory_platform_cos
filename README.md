@@ -1,17 +1,17 @@
-### 基于SpringBoot + Vue的计算机配件购买平台.
+![](https://img.shields.io/badge/License-MIT-blue.svg)
 
-电脑配件电商平台、计算机硬件购物系统、数码配件交易平台
+![](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)
 
-####  商铺管理员功能模块介绍：
-###### 商铺信息：维护店铺名称、logo、简介及营业状态等资料。我的商品：管理本店上架的计算机配件，支持编辑与下架。商铺订单：处理用户下单、发货及售后相关订单操作。订单评价：查看顾客对商品质量与服务的评分和留言。消息回复：及时响应用户咨询或平台发送的站内通知。商铺审核：提交资质材料，配合完成平台入驻审核流程。用户沟通：与买家在线交流，解答产品或订单问题。
+![](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-#### 系统管理员功能模块介绍：
-###### 收货地址管理：监管用户收货地址，确保配送信息规范有效。商铺审核管理：审核新申请商铺资质，决定是否批准上线。公告信息：发布平台规则、促销活动或系统维护通知。商品管理：监督全平台计算机配件信息，处理违规商品。用户评价：审核并管理用户对商品和商铺的评论内容。消息管理：统一处理平台与用户、商铺之间的通信记录。订单管理：监控所有交易订单状态，协调异常处理。贴子管理：审核论坛发帖，维护社区内容健康合规。商铺管理：管理所有入驻商铺资料，支持冻结或推荐操作。用户管理：维护用户账号安全，处理举报或封禁操作。商品类型：配置配件分类，如CPU、内存、显卡、电源等。
+# 基于 SpringBoot + Vue 的计算机配件购买平台 (Computer Components Purchasing Platform)
 
-####  用户功能模块介绍：
-###### 商铺详情：查看商家信息、主营配件、评分及联系方式。查看公告：阅读平台或商铺发布的最新通知与活动信息。搜索商品：通过关键词快速查找所需计算机配件产品。系统论坛：参与技术讨论、装机分享或配件使用交流。发帖回复：在社区中发表观点或回复他人帖子内容。用户订单：查看历史订单状态、物流信息及售后服务。加入购物车：将心仪配件暂存购物车，便于批量结算。收货地址管理：添加、编辑或删除多个收货地址信息。订单评价：对已完成的配件订单进行评分与文字反馈。联系客服：通过在线方式向商铺或平台客服寻求帮助。
+多商户入驻 · 配件商城 · 系统论坛 · 订单评价 · 商铺审核 · 消息互动 · 在线客服
+
+本项目是一套面向计算机配件销售的多商户电商平台，支持“商铺入驻审核、配件商品管理、购物车下单、订单评价、系统论坛、消息回复、公告发布、用户沟通”等核心业务。系统分为系统管理员、商铺管理员、普通用户三类角色：系统管理员负责平台整体运营、商铺审核、商品类型、用户管理、订单管理与内容审核；商铺管理员负责商铺信息维护、商品上架、订单处理、评价回复与用户沟通；用户可浏览商品、搜索配件、加入购物车、下单支付、参与论坛发帖、评价订单并与商铺客服沟通。	
 
 #### 安装环境
+️**注意**：请确保您的开发环境已安装以下依赖。
 
 JAVA 环境 
 
@@ -19,34 +19,114 @@ Node.js环境 [https://nodejs.org/en/] 选择14.17
 
 Yarn 打开cmd， 输入npm install -g yarn !!!必须安装完毕nodejs
 
-Mysql 数据库 [https://blog.csdn.net/qq_40303031/article/details/88935262] 一定要把账户和密码记住
+Mysql 数据库 一定要把账户和密码记住
 
 redis
 
-Idea 编译器 [https://blog.csdn.net/weixin_44505194/article/details/104452880]
+Idea 编译器
 
-WebStorm OR VScode 编译器 [https://www.jianshu.com/p/d63b5bae9dff]
+WebStorm OR VScode 编译器
 
 #### 采用技术及功能
 
 后端：SpringBoot、MybatisPlus、MySQL、Redis、
 前端：Vue、Apex、Antd、Axios
-报表：Spread.js
 
-平台前端：vue(框架) + vuex(全局缓存) + rue-router(路由) + axios(请求插件) + apex(图表)  + antd-ui(ui组件)
+平台前端：vue(框架) + vuex(全局缓存) + rue-router(路由) + axios(请求插件) + apex(图表)  + antd-ui(ui组件) + 百度地图 API
 
 平台后台：springboot(框架) + redis(缓存中间件) + shiro(权限中间件) + mybatisplus(orm) + restful风格接口 + mysql(数据库)
 
 开发环境：windows10 or windows7 ， vscode or webstorm ， idea + lambok
 
-#### 商铺管理员
-商铺信息、我的商品、商铺订单、订单评价、消息回复、商铺审核、用户沟通
+---
 
-#### 系统管理员
-收货地址管理、商铺审核管理、公告信息、商品管理、用户评价、消息管理、订单管理、贴子管理、商铺管理、用户管理、商品类型
+## 核心特性
 
-#### 用户
-商铺详情、查看公告、搜索商品、系统论坛、发帖回复、用户订单、加入购物车、收货地址管理、订单评价、联系客服
+- **多商户入驻与审核**：支持商铺申请入驻，系统管理员审核商铺资质、经营范围与营业状态，保障平台商户质量。
+- **计算机配件商品管理**：支持按商品类型维护配件信息，包括品牌、型号、规格参数、价格、库存与图文详情。
+- **购物车与订单流程**：用户可将配件加入购物车，选择收货地址后提交订单，支持待支付、已支付、待发货、已发货、已完成等状态流转。
+- **订单评价与商铺回复**：用户完成订单后可对商品与服务进行评价，商铺管理员可查看并回复评价，形成服务闭环。
+- **系统论坛社区**：用户可在论坛发帖、回复讨论，分享装机经验、配件选购建议与使用心得，增强平台互动性。
+- **消息与用户沟通**：支持用户与商铺管理员在线沟通，商铺可回复用户咨询，系统管理员统一管理消息记录。
+- **公告信息发布**：系统管理员发布平台公告、优惠活动、新品上架与系统通知，用户在前台查看最新公告。
+- **商铺详情展示**：用户可查看商铺基本信息、在售商品、评价情况与公告内容，辅助选购决策。
+- **数据统计看板**：系统管理员与商铺管理员可查看订单数量、销售金额统计。
+---
+
+## 适用场景
+
+- 计算机配件多商户电商平台
+- 数码硬件销售与交流平台
+- 校园电脑配件交易平台
+- 企业 IT 配件采购商城
+- 电脑配件社区电商系统
+- 商铺入驻型配件销售平台
+- 硬件爱好者交流与购物平台
+---
+
+## 功能模块概览
+
+### 系统管理员端
+
+- **用户管理**：管理普通用户账号、联系方式、账号状态与历史订单记录。
+- **商铺管理**：查看平台商铺列表，维护商铺基本信息、营业状态与商铺等级。
+- **商铺审核管理**：审核商铺入驻申请，确认商铺资质、经营范围与入驻状态。
+- **商品类型**：维护计算机配件分类体系，如 CPU、主板、显卡、内存、硬盘、电源、机箱、散热器等。
+- **商品管理**：查看平台全部商品，支持违规商品下架、敏感信息处理与商品状态管理。
+- **订单管理**：查看平台全部订单，跟踪订单状态，处理异常订单与售后纠纷。
+- **用户评价**：查看用户对商品与商铺的评价，支持评价审核、隐藏与异常评价处理。
+- **贴子管理**：管理论坛帖子与回复，支持内容审核、置顶、删除与敏感词过滤。
+- **公告信息**：发布平台公告、优惠活动、系统维护通知与配件新品信息。
+- **消息管理**：查看平台消息记录，处理用户与商铺之间的沟通消息与投诉反馈。
+- **收货地址管理**：查看用户收货地址数据，支持异常地址处理与地址规范管理。
+
+### 商铺管理员端
+
+- **商铺信息**：维护商铺名称、Logo、简介、联系方式、营业时间与经营范围。
+- **我的商品**：上架、编辑、下架本店计算机配件商品，维护价格、库存、规格与商品详情。
+- **商铺订单**：查看本店订单列表，处理待发货、已发货、已完成、已退款等订单状态。
+- **订单评价**：查看用户对本店商品与订单的评价，支持回复评价与处理差评。
+- **消息回复**：回复用户咨询消息，处理售前售后沟通，提升客户服务体验。
+- **商铺审核**：查看商铺入驻审核进度，补充商铺资质材料与经营信息。
+- **用户沟通**：与下单用户或咨询用户进行在线沟通，解答配件兼容性、发货与售后问题。
+
+### 用户端
+
+- **商铺详情**：查看商铺基本信息、在售配件、商铺评价与商铺公告。
+- **查看公告**：浏览平台公告、商铺公告、优惠活动与系统通知。
+- **搜索商品**：按关键词、商品类型、品牌、价格区间搜索计算机配件。
+- **系统论坛**：浏览论坛帖子，参与装机讨论、配件推荐与使用经验分享。
+- **发帖回复**：发布论坛帖子，回复他人帖子，参与社区互动。
+- **用户订单**：查看个人订单列表，跟踪订单状态，支持取消订单、确认收货与申请售后。
+- **加入购物车**：将心仪配件加入购物车，支持数量调整、批量结算与购物车管理。
+- **收货地址管理**：新增、编辑、删除收货地址，支持设置默认收货地址。
+- **订单评价**：对已完成订单进行评分与文字评价，分享购物体验。
+- **联系客服**：向商铺管理员或平台客服发送消息，咨询商品、订单与售后问题。
+
+---
+
+## 项目结构
+
+```text
+pharmacy-dispensing-system/
+├── backend/            # 后端 API 服务
+│   ├── src/
+│   │   ├── controllers/  # 控制器
+│   │   ├── models/       # 数据模型
+│   │   ├── routes/       # 路由
+│   │   └── services/     # 业务逻辑
+│   └── package.json
+├── frontend/           # 前端 Web 应用
+│   ├── src/
+│   │   ├── views/      # 页面视图
+│   │   ├── components/ # 公共组件
+│   │   └── store/      # 状态管理
+│   └── package.json
+├── docs/               # 项目文档与 API 接口说明
+├── LICENSE
+└── README.md
+```
+---
 
 
 #### 前台启动方式
@@ -56,37 +136,32 @@ WebStorm OR VScode 编译器 [https://www.jianshu.com/p/d63b5bae9dff]
 #### 默认后台账户密码
 [管理员]
 admin
-1234qwer
-
-[商家]
-test1
-1234qwer
+123456
 
 [用户]
-小程序登录
+fank
+123456
 
 #### 项目截图
+|  |  |
+|---------------------|---------------------|
+| ![](./assets/image%20(1).png) | ![](./assets/image%20(2).png) |
+| ![](./assets/image%20(3).png) | ![](./assets/image%20(4).png) |
+| ![](./assets/image%20(5).png) | ![](./assets/image%20(6).png) |
+| ![](./assets/image%20(7).png) | ![](./assets/image%20(8).png) |
+| ![](./assets/image%20(9).png) | ![](./assets/image%20(10).png) |
+| ![](./assets/image%20(11).png) |
 
 |  |  |
 |---------------------|---------------------|
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486564347.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486456478.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486548843.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486431158.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486525733.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486413597.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486506984.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486399413.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486490130.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486379063.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486468710.png)
-
-|  |  |
-|---------------------|---------------------|
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484796733.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484676820.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484780924.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484667620.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484764760.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484579710.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484746086.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484568568.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484701584.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484539246.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486308010.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484310133.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733486290210.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484291183.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733484262993.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733485631990.png) | 
-
+| ![](./assets/app_image%20(1).png) | ![](./assets/app_image%20(2).png) |
+| ![](./assets/app_image%20(3).png) | ![](./assets/app_image%20(4).png) |
+| ![](./assets/app_image%20(5).png) | ![](./assets/app_image%20(6).png) |
+| ![](./assets/app_image%20(7).png) | ![](./assets/app_image%20(8).png) |
+| ![](./assets/app_image%20(9).png) | ![](./assets/app_image%20(10).png) |
+| ![](./assets/app_image%20(11).png) | ![](./assets/app_image%20(12).png) |
+| ![](./assets/app_image%20(13).png) | ![](./assets/app_image%20(14).png) |
+| ![](./assets/app_image%20(15).png) | ![](./assets/app_image%20(16).png) |
 
 #### 演示视频
 
@@ -104,9 +179,10 @@ WeChat: `Storm_Berserker`
 
 > 项目部署调试不好包退！功能逻辑没讲明白包退！
 
-![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/work/936e9baf53eb9a217af4f89c616dc19.png)
+<div align=center><img align="center" src="./assets/product_word.png" alt="fankekeke" /></div>
 
 #### 其它资源
+[2026年-答辩顺利通过-客户评价🀄](https://berserker287.github.io/2026/06/29/2026%E5%B9%B4%E7%AD%94%E8%BE%A9%E9%A1%BA%E5%88%A9%E9%80%9A%E8%BF%87/)
 
 [2025年-答辩顺利通过-客户评价🍜](https://berserker287.github.io/2025/06/18/2025%E5%B9%B4%E7%AD%94%E8%BE%A9%E9%A1%BA%E5%88%A9%E9%80%9A%E8%BF%87/)
 
@@ -130,4 +206,8 @@ WeChat: `Storm_Berserker`
 
 More info: [悲伤的橘子树](https://berserker287.github.io/)
 
-<p><img align="center" src="https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/%E5%90%88%E4%BD%9C%E7%89%A9%E6%96%99%E6%A0%B7%E5%BC%8F%20(3).png" alt="fankekeke" /></p>
+<div align="center"><img align="center" src="./assets/chat_qr_code.png" alt="fankekeke" width=250 /></div>
+
+<p><img align="center" src="./assets/wechat_group.png" alt="fankekeke" /></p>
+
+**感谢查看**
